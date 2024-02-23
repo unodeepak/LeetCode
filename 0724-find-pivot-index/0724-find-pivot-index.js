@@ -14,11 +14,13 @@ var pivotIndex = function(nums) {
     }
     
     let sum = 0;
+    let sum1 = getSum(1)
     for (var i = 0; i < len; i++) {
-        if (sum == getSum(i+1)) {
+        if (sum == sum1) {
             break;
         }
         sum += nums[i];
+        sum1 -= nums[i + 1];
     }
     
     return i == len ? -1 : i;
