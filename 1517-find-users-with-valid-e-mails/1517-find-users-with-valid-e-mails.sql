@@ -1,7 +1,3 @@
 # Write your MySQL query statement below
-# select *from users where mail regexp "^[A-Za-z][A-Za-z0-9.%-_]*@leetcode.com$"
-
-SELECT *
-FROM Users
-WHERE mail REGEXP '^[a-zA-Z][a-zA-Z0-9._-]*@leetcode[.]com$'
+select *from users where mail regexp '^[a-zA-Z][a-zA-Z0-9._-]*@leetcode[.]com$'
 
